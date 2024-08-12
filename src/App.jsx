@@ -1,15 +1,37 @@
 import './App.css';
 import CatalagoProduto from './CatalogoProduto';
 import Header from './header';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 
 function App() {
     const nomesProdutos = ['Camisa Preta', 'Camisa branca','Camisa azul','Camisa Preta',]
+    const rotas = createBrowserRouter([
+        {
+          path: '/',
+          element: <>
+            <Header></Header>
+            <CatalagoProduto 
+            nomes={nomesProdutos}/>
+          </>
+        },
+        {
+          path: '/seach',
+          element: <p>teste</p>
+        },
+        {
+            path: '/buy',
+            element: <p>teste</p>
+          },
+          {
+            path: '/login',
+            element: <p>teste</p>
+          }
+      ])
+
     return (
         <>
-        <Header></Header>
-        <CatalagoProduto 
-        nomes={nomesProdutos}
-        />
+        <RouterProvider router={rotas}/>
         </>
     )
 }
