@@ -1,8 +1,8 @@
 import ItemCamisa from "./ItemCamisa";
-import Camisa1 from './img/championsazul.png';
-import Camisa2 from './img/championsbranca.png';
-import Camisa3 from './img/tommyazul.png';
-import Camisa4 from './img/highbranca.png';
+import Camisa1 from './img/camisatd.png';
+import Camisa2 from './img/camisatd1.png';
+import Camisa3 from './img/camisatd2.png';
+import Camisa4 from './img/camisatd3.png';
 
 const CatalagoProduto = ({titulo, nomes}) => {
     if (!Array.isArray(nomes) || nomes.length <4){

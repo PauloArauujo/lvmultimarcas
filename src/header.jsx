@@ -13,6 +13,14 @@ const Header = () => {
             <div>
                 <hr className='azul'/>
                 <hr className='cinza'/>
+            <div className='links'>
+                <nav className='link'>
+                    <Link to="#">LANÇAMENTOS</Link>
+                    <Link to="#">OFERTAS</Link>
+                    <Link to="#">MASCULINO</Link>
+                    <Link to="#">FEMININO</Link>
+                </nav>
+            </div>
             </div>
             <Link to={`/seach`}><FontAwesomeIcon icon={faMagnifyingGlass} className='icon'/> </Link>
             <div>
