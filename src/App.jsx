@@ -1,6 +1,7 @@
 import './App.css';
 import CatalagoProduto from './CatalogoProduto';
 import Header from './header';
+import Footer from './Footer';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
@@ -13,6 +14,7 @@ function App() {
             <Header></Header>
             <CatalagoProduto 
             nomes={nomesProdutos}/>
+            <Footer/>
           </>
         },
         {

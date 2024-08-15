@@ -3,19 +3,49 @@ import Camisa1 from './img/camisatd.png';
 import Camisa2 from './img/camisatd1.png';
 import Camisa3 from './img/camisatd2.png';
 import Camisa4 from './img/camisatd3.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+<FontAwesomeIcon icon="fa-solid fa-plus" />
 
-const CatalagoProduto = ({titulo, nomes}) => {
+const CatalagoProduto = ({nomes, }) => {
     if (!Array.isArray(nomes) || nomes.length <4){
         return null
     }
+    const obj1 = [{
+        nome: "tommy",
+        img:Camisa1, 
+        valor: "R$ 150,00",
+        path: "/"
+    },
+    {
+        nome: "tommy",
+        img:Camisa2, 
+        valor: "R$ 150,00",
+        path: "/"
+    },{
+        nome: "tommy",
+        img:Camisa1, 
+        valor: "R$ 150,00",
+        path: "/"
+    },
+    {
+        nome: "tommy",
+        img:Camisa2, 
+        valor: "R$ 150,00",
+        path: "/"
+    }]
     return (
         <>
-        <h1 className='sub-title'>{titulo}</h1>
         <div className='section-itens'>
-            <ItemCamisa titulo = {nomes[0]} imagem={Camisa1}/>
+            {
+                obj1.map((i) => 
+                    <ItemCamisa titulo = {i.nome} imagem={i.img} valor={i.valor} path ={i.path}/>
+                )
+            }
+            {/* <ItemCamisa titulo = {nomes[0]} imagem={Camisa1}/>
             <ItemCamisa titulo = {nomes[1]} imagem={Camisa2}/>
             <ItemCamisa titulo = {nomes[2]} imagem={Camisa3}/>
-            <ItemCamisa titulo = {nomes[3]} imagem={Camisa4}/>
+            <ItemCamisa titulo = {nomes[3]} imagem={Camisa4}/> */}
         </div>
         </>
     )
