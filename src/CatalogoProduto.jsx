@@ -5,7 +5,8 @@ import Camisa3 from './img/camisatd2.png';
 import Camisa4 from './img/camisatd3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
-<FontAwesomeIcon icon="fa-solid fa-plus" />
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 const CatalagoProduto = ({nomes, }) => {
     if (!Array.isArray(nomes) || nomes.length <4){

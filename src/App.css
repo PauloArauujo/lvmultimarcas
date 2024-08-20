@@ -132,19 +132,24 @@ p {
     border: 0px;
     margin: 0px 0; 
 }
-
-.azulfooter {
-    background-color: #190C76;
-    width: 1420px !important;
-    margin-top: 55px !important;
-}
 .cinzafooter {
-    background-color: #d9d9d9;
-    margin-left: 20px !important; 
-    width: 1420px !important;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    margin-left: 250px;
+    background-color: #d9d9d9 !important;
+    width: 1653px !important;
+    height: 10px;
 }
-footer{
-    height: 150px;
-    width: 100%;
-    background-color: #190C76;
+.azulfooter{
+    background-color: #190C76 !important;
+    width: 1903px !important;
+    height: 100px;
+    margin: 0%;
+}
+.azulfooter p {
+    margin: 0;
+    padding-top: 70px;
+    color: #d9d9d9;
+    margin-left: 1650px;
+    font-size: 20px;
 }

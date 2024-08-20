@@ -4,10 +4,14 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 
 const Header = () => {
+
     return(
+        
         <div className='header'>
             <img src={logo}/>
             <div>
@@ -32,11 +36,21 @@ const Header = () => {
                 <hr className='azul1'/>
                 <hr className='cinza1'/>
             </div>
-            <Link to={`/login`}><FontAwesomeIcon icon={faUser} className='icon'/></Link>
             <div>
                 <hr className='azul1'/>
                 <hr className='cinza1'/>
             </div>
+            <Dropdown>
+                <Dropdown.Toggle id="dropdown-autoclose-true">
+                <FontAwesomeIcon icon={faUser} className='icon'/>
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+                <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+                <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
         </div>
     )
 }

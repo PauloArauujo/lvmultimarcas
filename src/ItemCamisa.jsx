@@ -1,10 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faHeart} from '@fortawesome/free-regular-svg-icons';
+import {faHeart as faHeartRegular} from '@fortawesome/free-regular-svg-icons';
+import {faHeart as faHeartSolid} from '@fortawesome/free-solid-svg-icons';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-
+import { useState } from 'react';
 
 const ItemCamisa = ({imagem, valor, path}) => {
+const [fav, setFav] = useState();
+
+const handleFavClick = () => {
+    const newFav = !fav;
+    setFav(newFav);
+}
     return (
         <div className='card-produto'>
             <div className="cubo">
@@ -16,7 +23,11 @@ const ItemCamisa = ({imagem, valor, path}) => {
                     <p className='valor'>{valor}</p>
                 </div>
                 <Link to={path}><FontAwesomeIcon icon={faPlus} className='font_aa'></FontAwesomeIcon></Link>
-                <Link to={path}><FontAwesomeIcon icon={faHeart} className='font_aa'/></Link>
+                {
+                    fav == true 
+                 ? <FontAwesomeIcon icon={faHeartSolid} className='font_aa' onClick={handleFavClick}/>
+                 : <FontAwesomeIcon icon={faHeartRegular} className='font_aa' onClick={handleFavClick}/>
+                }
             </div>
         </div>
         </div>
