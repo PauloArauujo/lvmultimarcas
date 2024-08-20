@@ -6,47 +6,41 @@ import Camisa4 from './img/camisatd3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { Link } from "react-router-dom";
 
 
 const CatalagoProduto = ({nomes, }) => {
     if (!Array.isArray(nomes) || nomes.length <4){
         return null
     }
-    const obj1 = [{
+    const obj1 =   [{
         nome: "tommy",
         img:Camisa1, 
-        valor: "R$ 150,00",
-        path: "/"
+        valor: "R$ 150,00"
     },
     {
-        nome: "tommy",
+        nome: "teste",
         img:Camisa2, 
-        valor: "R$ 150,00",
-        path: "/"
+        valor: "R$ 150,00"
     },{
         nome: "tommy",
         img:Camisa1, 
-        valor: "R$ 150,00",
-        path: "/"
+        valor: "R$ 150,00"
     },
     {
         nome: "tommy",
         img:Camisa2, 
-        valor: "R$ 150,00",
-        path: "/"
-    }]
+        valor: "R$ 150,00"
+    }];
+
     return (
         <>
         <div className='section-itens'>
             {
                 obj1.map((i) => 
-                    <ItemCamisa titulo = {i.nome} imagem={i.img} valor={i.valor} path ={i.path}/>
+                <ItemCamisa nome = {i.nome} imagem={i.img} valor={i.valor} />
                 )
             }
-            {/* <ItemCamisa titulo = {nomes[0]} imagem={Camisa1}/>
-            <ItemCamisa titulo = {nomes[1]} imagem={Camisa2}/>
-            <ItemCamisa titulo = {nomes[2]} imagem={Camisa3}/>
-            <ItemCamisa titulo = {nomes[3]} imagem={Camisa4}/> */}
         </div>
         </>
     )

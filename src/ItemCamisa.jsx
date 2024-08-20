@@ -5,7 +5,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const ItemCamisa = ({imagem, valor, path}) => {
+const ItemCamisa = ({imagem, valor, nome}) => {
 const [fav, setFav] = useState();
 
 const handleFavClick = () => {
@@ -15,14 +15,16 @@ const handleFavClick = () => {
     return (
         <div className='card-produto'>
             <div className="cubo">
-            <div className="quadrado">
-                <img src={imagem}/>
-            </div>
+            <Link to={`/${nome}`}>
+                <div className="quadrado">
+                    <img src={imagem}/>
+                </div>
+            </Link>
             <div className='buy'>
                 <div className="quadrado2">
                     <p className='valor'>{valor}</p>
                 </div>
-                <Link to={path}><FontAwesomeIcon icon={faPlus} className='font_aa'></FontAwesomeIcon></Link>
+                <Link to={`/${nome}`}><FontAwesomeIcon icon={faPlus} className='font_aa'></FontAwesomeIcon></Link>
                 {
                     fav == true 
                  ? <FontAwesomeIcon icon={faHeartSolid} className='font_aa' onClick={handleFavClick}/>

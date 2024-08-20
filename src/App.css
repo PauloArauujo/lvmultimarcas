@@ -12,8 +12,7 @@ body {
     margin-top: 20px;
     margin-left: 40px;
 }
-.header hr {
-    display: flex;
+.header div {
     height: 6px;
     border: 0px;
     margin: 0px 0; 
@@ -24,7 +23,7 @@ body {
     margin-top: 55px !important;
 }
 .cinza {
-    background-color: #d9d9d9;
+    background-color: #d9d9d9 ;
     margin-left: 20px !important; 
     width: 1420px !important;
 }
@@ -33,7 +32,24 @@ body {
     width: 30px !important;
     margin-top: 55px !important;
 }
+.dropdown button{
+    background: transparent;
+    border: none;
+    margin-left: -15px !important;
+    margin-top: -5px !important;
+}
 .cinza1 {
+    background-color: #d9d9d9;
+    margin-left: 10px !important; 
+    width: 30px !important;
+}
+.azul2 {
+    background-color: #190C76;
+    width: 30px !important;
+    margin-top: 55px !important;
+    padding-left: -40px !important;
+}
+.cinza2 {
     background-color: #d9d9d9;
     margin-left: 10px !important; 
     width: 30px !important;
@@ -65,7 +81,8 @@ body {
     padding-bottom: .10rem;
 }
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: #190C76 !important;
 }
 .links {
     display: flex;
@@ -137,12 +154,12 @@ p {
     margin-bottom: 0px;
     margin-left: 250px;
     background-color: #d9d9d9 !important;
-    width: 1653px !important;
+    width: 1669px !important;
     height: 10px;
 }
 .azulfooter{
     background-color: #190C76 !important;
-    width: 1903px !important;
+    width: 1920px !important;
     height: 100px;
     margin: 0%;
 }
@@ -150,6 +167,23 @@ p {
     margin: 0;
     padding-top: 70px;
     color: #d9d9d9;
-    margin-left: 1650px;
+    margin-left: 1670px;
     font-size: 20px;
+}
+.exibe-produto-body{
+    display: flex;
+}
+.exibe-produto-desc{
+    
+}
+.espaço {
+    margin: 0%;
+    height: 110px;
+}
+.ExibeQuadrado {
+    margin: 10px 0 0px 20px;
+    width: 500px;
+    height: 100%;
+    background: rgba(217, 217, 217, 0.6);   
+    border-radius: 15px;
 }

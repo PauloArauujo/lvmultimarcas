@@ -15,8 +15,8 @@ const Header = () => {
         <div className='header'>
             <img src={logo}/>
             <div>
-                <hr className='azul'/>
-                <hr className='cinza'/>
+                <div className='azul'/>
+                <div className='cinza'/>
             <div className='links'>
                 <nav className='link'>
                     <Link to="#">LANÇAMENTOS</Link>
@@ -28,20 +28,16 @@ const Header = () => {
             </div>
             <Link to={`/seach`}><FontAwesomeIcon icon={faMagnifyingGlass} className='icon'/> </Link>
             <div>
-                <hr className='azul1'/>
-                <hr className='cinza1'/>
+                <div className='azul1'/>
+                <div className='cinza1'/>
             </div>
             <Link to={`/buy`}><FontAwesomeIcon icon={faCartShopping} className='icon'/></Link>
             <div>
-                <hr className='azul1'/>
-                <hr className='cinza1'/>
+                <div className='azul1'/>
+                <div className='cinza1'/>
             </div>
-            <div>
-                <hr className='azul1'/>
-                <hr className='cinza1'/>
-            </div>
-            <Dropdown>
-                <Dropdown.Toggle id="dropdown-autoclose-true">
+                 <Dropdown>
+                <Dropdown.Toggle>
                 <FontAwesomeIcon icon={faUser} className='icon'/>
                 </Dropdown.Toggle>
 
@@ -51,6 +47,11 @@ const Header = () => {
                 <Dropdown.Item href="#">Menu Item</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
+            <div>
+                <div className='azul2'/>
+                <div className='cinza2'/>
+            </div>
+
         </div>
     )
 }
