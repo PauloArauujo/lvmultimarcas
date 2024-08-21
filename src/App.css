@@ -33,21 +33,23 @@ body {
     margin-top: 55px !important;
 }
 .dropdown button{
-    background: transparent;
+    background-color: inherit !important;
     border: none;
     margin-left: -15px !important;
     margin-top: -5px !important;
+    margin-right: -22px;
 }
 .cinza1 {
     background-color: #d9d9d9;
     margin-left: 10px !important; 
     width: 30px !important;
+    text-decoration: #000;
 }
 .azul2 {
     background-color: #190C76;
     width: 30px !important;
     margin-top: 55px !important;
-    padding-left: -40px !important;
+    padding-left: -100px !important;
 }
 .cinza2 {
     background-color: #d9d9d9;
@@ -142,6 +144,7 @@ p {
 
 .footer {
     display: flex;
+    
 }
 .header hr {
     display: flex;
@@ -162,18 +165,22 @@ p {
     width: 1920px !important;
     height: 100px;
     margin: 0%;
+    display: flex;
 }
 .azulfooter p {
     margin: 0;
     padding-top: 70px;
     color: #d9d9d9;
-    margin-left: 1670px;
     font-size: 20px;
 }
-.exibe-produto-body{
-    display: flex;
+.iconsFooter {
+    color: #d9d9d9;
+    margin-left: 5px;
 }
 .exibe-produto-desc{
+    display: flex;
+    justify-content: center;
+    width: 120%;
     
 }
 .espaço {
@@ -186,4 +193,11 @@ p {
     height: 100%;
     background: rgba(217, 217, 217, 0.6);   
     border-radius: 15px;
+    text-align: center;
+}
+.exibe-produto-desc a {
+margin-top: 100px;    
+}
+.estrelas{
+    color: #000;
 }

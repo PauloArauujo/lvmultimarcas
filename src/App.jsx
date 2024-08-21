@@ -5,8 +5,8 @@ import Footer from './Footer';
 import ExibeProduto from './ExibeProduto';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import ItemCamisa from "./ItemCamisa";
+// import Login from "./Login";
 import Camisa1 from './img/camisatd.png';
 import Camisa2 from './img/camisatd1.png';
 import Camisa3 from './img/camisatd2.png';
@@ -56,10 +56,10 @@ function App() {
             path: '/:nome',
             element: <ExibeProduto catalago={produtos}/>
           },
-          {
-            path: '/login',
-            element: <p>teste</p>
-          }
+          // {
+          //   path: '/login',
+          //   element: <Login/>
+          // }
       ])
 
     return (
