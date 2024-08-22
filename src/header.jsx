@@ -6,16 +6,16 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { useState } from 'react';
 
 
 
 const Header = () => {
-
+    const [mostraPesquisa, setmostraPesquisa] = useState(true);
     return(
-        
         <div className='header'>
             <img src={logo}/>
-            <div>
+            <div className='anu'>
                 <div className='azul'/>
                 <div className='cinza'/>
             <div className='links'>
@@ -27,7 +27,12 @@ const Header = () => {
                 </nav>
             </div>
             </div>
-            <Link to={`/seach`}><FontAwesomeIcon icon={faMagnifyingGlass} className='icon'/> </Link>
+            <div>
+            <button className = "pesquisa" /*onClick={()=> setmostraPesquisa(!mostraPesquisa)}*/>
+                <FontAwesomeIcon icon={faMagnifyingGlass} className='icon'/> 
+            </button>
+            </div>
+               
             <div>
                 <div className='azul1'/>
                 <div className='cinza1'/>
@@ -43,16 +48,18 @@ const Header = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                {/* <Dropdown.Item><Link to={'/Login'}>Login</Link></Dropdown.Item> */}
-                {/* <Dropdown.Item Link to={Login}>Menu Item</Dropdown.Item>
-                <Dropdown.Item Link to={Login}>Menu Item</Dropdown.Item> */}
-                </Dropdown.Menu>
+                <Dropdown.Item><Link to={'/Login'}>Login</Link></Dropdown.Item>
+                <Dropdown.Item Link to={Login}>Menu Item</Dropdown.Item>
+                <Dropdown.Item Link to={Login}>Menu Item</Dropdown.Item>
+                </Dropdown.Menu> 
             </Dropdown>
             <div>
                 <div className='azul2'/>
                 <div className='cinza2'/>
             </div>
-
+            {/* <div className='barraDePesquisaa'>
+                    {mostraPesquisa? <input className='barra' type="barraDePesquisa" placeholder="Pesquisa" /> : <></>}
+                </div> */}
         </div>
     )
 }

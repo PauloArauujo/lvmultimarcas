@@ -7,37 +7,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Link } from "react-router-dom";
-
+import produtos from './Services';
 
 const CatalagoProduto = ({nomes, }) => {
     if (!Array.isArray(nomes) || nomes.length <4){
         return null
     }
-    const obj1 =   [{
-        nome: "tommy",
-        img:Camisa1, 
-        valor: "R$ 150,00"
-    },
-    {
-        nome: "teste",
-        img:Camisa2, 
-        valor: "R$ 150,00"
-    },{
-        nome: "tommy",
-        img:Camisa1, 
-        valor: "R$ 150,00"
-    },
-    {
-        nome: "tommy",
-        img:Camisa2, 
-        valor: "R$ 150,00"
-    }];
+
 
     return (
         <>
         <div className='section-itens'>
             {
-                obj1.map((i) => 
+                produtos.map((i) => 
                 <ItemCamisa nome = {i.nome} imagem={i.img} valor={i.valor} />
                 )
             }
