@@ -3,6 +3,7 @@ body {
     color: #000;
     margin: 0
 }
+/*HEADER*/
 .header {
     display: flex;
 }
@@ -137,15 +138,8 @@ p {
     border: none;
     background-color: #fff;
 }
-.barraDePesquisaa{
-   
-}
 .barra{
-    display: flex;
-    justify-content: center;
     width: 100px;
-
-    
 }
 .buy {
     display: flex;
@@ -156,7 +150,7 @@ p {
 .font_aa{
     font-size: 45px;
 }
-
+/*FOOTER*/  
 .footer {
     display: flex;
     
@@ -192,6 +186,7 @@ p {
     color: #d9d9d9;
     margin-left: 5px;
 }
+/*EXIBE PRODUTOS (TELAS DE COMPRAS)*/
 .espaco {
     margin-top: 15px; 
 }
@@ -238,27 +233,7 @@ p {
     margin-bottom: 5px;
     color: #190C76;
 }
-.cor1 {
-        background: #190C76;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        margin: 10px;
-}
-.cor2 {
-    background: #660000;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-}
-.cor3 {
-    background: #000;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-}
+
 .tamanho {
         font-size: 20px;
         margin-top: 10px;
@@ -266,47 +241,19 @@ p {
         color: #190C76;
     
 }
+.btnTamanhos{
+    border: none;
+    background-color: #fff;
+    border-radius: 40%;
+    justify-content: center;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    
+}
 .tamanhos{
     display: flex;
-}
-.p{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(217, 217,217, 0.6);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-}
-.m{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(217, 217,217, 0.6);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;;
-    margin-right: 15px;
-
-}
-.g{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(217, 217,217, 0.6);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-
-}
-.gg{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(217, 217,217, 0.6);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-
+    cursor: p;
 }
 
 .finalizar {
@@ -318,7 +265,13 @@ p {
     background-color: #190C76;
     width: 200px;
     border-radius: 5px;
-    border-bottom: #d9d9d9;
+    border-bottom: solid 1px #d9d9d9;
+   transition: background-color 0.25s ease;
+}
+.btnCompra:hover{
+    text-transform: capitalize;
+    background-color: rgb(33, 153, 59);
+    border-bottom: solid 1px
 }
 .btnCompra h2 {
     text-align: center;
@@ -341,23 +294,187 @@ p {
     font-size: 30px;
 }
 
+.anu {
+    margin: 0%;
+    padding: 0%;
+}
+.barra {
+    margin-top: 30px;
+    margin-bottom: -0%;
+    padding: 0%;
+}
 
+.p{
+    background-color: rgba(217, 217,217, 0.6);
+    border-radius: 40%;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    
+}
+.m{
+    background-color: rgba(217, 217,217, 0.6);
+    border-radius: 40%;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+}
+.g{
+    background-color: rgba(217, 217,217, 0.6);
+    border-radius: 40%;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+}
+.gg{
+    background-color: rgba(217, 217,217, 0.6);
+    border-radius: 40%;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+}
+.btnCor1{
+    border: none;
+    background-color:#190C76;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.btnCor2{
+    border: none;
+    background-color: aqua;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.btnCor3{
+    border: none;
+    background-color:#000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
 /* LOGIN */
 .container{
-    margin: 150px 0px 262px 0px;
+    margin: 121px 0px 249px 100px;
 }
 .container h1 {
     text-align: center;
     color: #190C76;
 }
+.inputs {
+	padding: 10px;
+	border: none;
+    background-color: #d9d9d9;    
+    width: 80%;
+    outline: none;
+}
 .email {
-    text-align: center;
+    display: flex;
+    background-color: #d9d9d9;  
+    border-radius: 20px;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 455px;
 }
 .password {
-    text-align: center;
+    display: flex;
+    background-color: #d9d9d9;  
+    border-radius: 20px;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 455px;
+
 }
+.iconemail {
+    width: 10%;
+}
+.iconsenha {
+    width: 10%;
+}
+.espacologin {
+    margin-left: 20px;
+}
+.recall {
+    font-size: 9px;
+    margin-left: 470px;
+}
+.checkcolaborador {
+    margin-left: 60px;
 
+}
+.checksenha {
+    margin-left: -10px;
 
+} 
+.checkmimm {
+    margin-bottom: 10px;
+    margin-right: 2px;
+    text-align: center;
+    align-items: center;
+}
+.recall {
+    margin-top: 8px;
+}
+.btnentrar{
+    margin-top: 20px;
+    margin-left: 580px;
+    background-color: #190C76; 
+    color: #d9d9d9 !important;
+    border-radius: 15px;
+    border: none;
+    width: 10%;
+    height: 30px;
+}
+.btnentrar a{
+    color: #d9d9d9 !important;
+}
+.checkcadastro {
+    font-size: 7px;
+    margin-top: -10px;
+}
+/* CADASTRO */
+.containerCadastro {
+margin: 70px 0px 104px 0px;
+}
+.CadastroH1 {
+  font-size: 30px;  
+  color: #190C76;
+  text-align: center;
+}
+.CadastroBox { 
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(217, 217,217, 0.6); 
+    color: #190C76;
+    margin-top: 15px;
+}
+.btnCadastro {
+    margin-top: 10px;
+    margin-left: 145px;
+    border: none;
+    border-radius: 15px;
+}
+.btnCadastro:hover{
+    text-transform: capitalize;
+    background-color: #d9d9d9;
+    color: #d9d9d9 !important;
+}
 
 
 

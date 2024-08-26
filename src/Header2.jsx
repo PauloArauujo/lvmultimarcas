@@ -11,7 +11,7 @@ import { useState } from 'react';
 
 
 
-const Header = () => {
+const Header2 = () => {
     const [mostraPesquisa, setmostraPesquisa] = useState(true);
     return(
         <div className='header'>
@@ -20,14 +20,6 @@ const Header = () => {
             {/* {mostraPesquisa? <input className='barra' type="barraDePesquisa" placeholder="Pesquisa" /> : <></>} */}
                 <div className='azul'></div>
                 <div className='cinza'/>
-            <div className='links'>
-                <nav className='link'>
-                    <Link to="#">LANÇAMENTOS</Link>
-                    <Link to="#">OFERTAS</Link>
-                    <Link to="#">MASCULINO</Link>
-                    <Link to="#">FEMININO</Link>
-                </nav>
-            </div>
             </div>
             <div>
             <button className = "pesquisa" /*onClick={()=> setmostraPesquisa(!mostraPesquisa)}*/>
@@ -49,7 +41,7 @@ const Header = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                <Dropdown.Item><Link to={'/login'}>Login</Link></Dropdown.Item>
+                <Dropdown.Item><Link to={'/Login'}>Login</Link></Dropdown.Item>
                 <Dropdown.Item><Link to={'/cadastro'}>Cadastro</Link></Dropdown.Item>
                 <Dropdown.Item Link to={Login}>Menu Item</Dropdown.Item>
                 </Dropdown.Menu> 
@@ -61,4 +53,4 @@ const Header = () => {
         </div>
     )
 }
-export default Header
+export default Header2;

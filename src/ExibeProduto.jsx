@@ -1,4 +1,4 @@
-import Header from "./header";
+import Header2 from './Header2';
 import Footer from "./Footer";
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {useParams } from "react-router-dom";
@@ -15,7 +15,7 @@ const ExibeProduto =({catalago}) => {
 
     return(
         <>
-        <Header/>
+        <Header2/>
         <div className="exibe">   
                 <div className="ExibeQuadrado">
                     <img src={buscaProduto.img} alt={catalago.nome}/>
@@ -36,14 +36,17 @@ const ExibeProduto =({catalago}) => {
             <div className='linhaazul'></div>
                 <h3 className="cor">ESCOLHA A COR:</h3>
             <div className="cores">
-                <div className="cor1"></div>
-                <div className="cor2"></div>
-                <div className="cor3"></div>
+                <button className= "btnCor1"></button>
+                <button className= "btnCor2"></button>
+                <button className= "btnCor3"></button>
             </div>
             <div className='linhaazul'></div>
                 <h3 className="tamanho">TAMANHOS:</h3>
                 <div className="tamanhos">
-                    <h5 className="p">P</h5> <h5 className="m">M</h5> <h5 className="g">G</h5> <h5 className="gg">GG</h5>
+                <button className= "btnTamanhos"><h5 className="p">P</h5></button> 
+                <button className= "btnTamanhos"><h5 className="m">M</h5> </button>
+                <button className= "btnTamanhos"><h5 className="g">G</h5> </button>
+                <button className= "btnTamanhos"><h5 className="gg">GG</h5></button>
                 </div>
                 <div className="finalizar">
                 <button className="btnCompra"><h2>COMPRAR</h2></button>

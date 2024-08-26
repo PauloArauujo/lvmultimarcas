@@ -10,16 +10,16 @@ const produtos = [{
 },
 {
     nome: "Camisa Preta da Lacoste",
-    img:Camisa1, 
+    img:Camisa2, 
     valor: "R$ 150,00"
 },{
     nome: "CAMISA DA TOMMY HILFIGER PRETA",
-    img:Camisa1, 
+    img:Camisa3, 
     valor: "R$ 150,00"
 },
 {
     nome: "CAMISA DA TOMMY HILFIGER PRETA",
-    img:Camisa2, 
+    img:Camisa4, 
     valor: "R$ 150,00"
 }];
 
