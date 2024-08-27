@@ -1,7 +1,9 @@
 import Header2 from './Header2';
 import Footer from "./Footer";
+import Pagamento from './Pagamento';
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {useParams } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import {faStar as faStarRegular} from '@fortawesome/free-regular-svg-icons';
 import {faStar as faStarSolid} from '@fortawesome/free-solid-svg-icons';
 import {faStarHalfStroke} from '@fortawesome/free-solid-svg-icons';
@@ -52,7 +54,7 @@ const ExibeProduto =({catalago}) => {
                 <button className="btnCompra"><h2>COMPRAR</h2></button>
                     <div className="iconsCompra"> 
                         <FontAwesomeIcon icon={faCirclePlus} className="iconCompra" />
-                        <FontAwesomeIcon icon={faShareNodes} className="iconCompra1"/>
+                        <Link to={'/pagamento'}><FontAwesomeIcon icon={faShareNodes} className="iconCompra1"/></Link>
                     </div>
                 </div>
             </div>

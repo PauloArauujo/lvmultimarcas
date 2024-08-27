@@ -10,6 +10,7 @@ import ItemCamisa from "./ItemCamisa";
 import Cadastro from './Cadastro';
 import Login from "./Login";
 import produtos from './Services';
+import Pagamento from './Pagamento';
 
 function App() {
     const nomesProdutos = ['Camisa Preta', 'Camisa branca','Camisa azul','Camisa Preta',]
@@ -40,6 +41,10 @@ function App() {
           {
             path: '/cadastro',
             element: <Cadastro/>
+          },
+          {
+            path: '/pagamento',
+            element: <Pagamento/>
           }
       ])
 
