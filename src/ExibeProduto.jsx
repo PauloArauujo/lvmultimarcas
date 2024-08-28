@@ -9,9 +9,17 @@ import {faStar as faStarSolid} from '@fortawesome/free-solid-svg-icons';
 import {faStarHalfStroke} from '@fortawesome/free-solid-svg-icons';
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
-const ExibeProduto =({catalago}) => {
+const ExibeProduto =({catalago,name, ...props}) => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
     const nomePath = useParams();
     const buscaProduto = catalago.find(produto => produto.nome == nomePath.nome);
 
@@ -51,10 +59,22 @@ const ExibeProduto =({catalago}) => {
                 <button className= "btnTamanhos"><h5 className="gg">GG</h5></button>
                 </div>
                 <div className="finalizar">
-                <button className="btnCompra"><h2>COMPRAR</h2></button>
+                    <div className='Pagamento'>
+                <Button onClick={handleShow} className="btn-primary"><h2>COMPRAR</h2></Button>
+                    <Offcanvas show={show} onHide={handleClose} {...props} placement={'end'}>
+                        <Offcanvas.Header closeButton>
+                        <Offcanvas.Title>Pagamento</Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                        Conteudo do Pagamento! 
+                        </Offcanvas.Body>
+                    </Offcanvas>
+                    
+                    </div>
+                    
                     <div className="iconsCompra"> 
                         <FontAwesomeIcon icon={faCirclePlus} className="iconCompra" />
-                        <Link to={'/pagamento'}><FontAwesomeIcon icon={faShareNodes} className="iconCompra1"/></Link>
+                        <FontAwesomeIcon icon={faShareNodes} className="iconCompra1"/>
                     </div>
                 </div>
             </div>

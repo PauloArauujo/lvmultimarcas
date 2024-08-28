@@ -151,6 +151,12 @@ p {
     font-size: 45px;
 }
 /*FOOTER*/  
+.footer {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  }
 
 .header hr {
     display: flex;
@@ -159,40 +165,40 @@ p {
     margin: 0px 0; 
 }
 .cinzafooter {
-    margin-top: 80px;
-    margin-bottom: 0px;
-    margin-left: 250px;
     background-color: #d9d9d9 !important;
-    width: 1669px !important;
+    width: 80% !important;
     height: 10px;
-}
+    margin-bottom: 0px;
+  }
 .azulfooter {
-    background-color: #190C76 !important;
-    width: 1920px !important;
-    height: 100px;
-    margin: 0%;
-    position: relative;
-}
+  background-color: #190C76 !important;
+  height: 100px;
+  width: 100%;
+  padding: 10px 0;
+    padding-right: 0px;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-right: 10px;
+  margin: 0px;
+  }
 
-.azulfooter p {
-    margin: 0;
-    padding-top: 70px;
-    margin-left: 1680px;  
+.pfooter {
     color: #d9d9d9;
     font-size: 20px;
-}
+    margin: 0px;
+  }
+  .elmentfooter {
+    width: 5%;
+    display: flex;
+    justify-content: space-around;
+  }
 .iconsFooter {
     color: #d9d9d9;
-    position: absolute;
-    top: 20px; 
-    right                          : 1px; 
-    margin-right: 20px 
 }
 .iconsFooters {
     color: #d9d9d9;
-    position: absolute;
-    top: 20px; 
-    right: 55px;  
 }
 
 /*EXIBE PRODUTOS (TELAS DE COMPRAS)*/
@@ -270,16 +276,18 @@ p {
     margin-top: 15px;
 }
 
-.btnCompra{
-    background-color: #190C76;
+.btn-primary{
+    background-color: #190C76 !important;
+    border-color: none !important;
     width: 200px;
     border-radius: 5px;
     border-bottom: solid 1px #d9d9d9;
-   transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
 }
-.btnCompra:hover{
+.btn-primary:hover{
     text-transform: capitalize;
-    background-color: rgb(33, 153, 59);
+    background-color:rgba(7, 19, 128, 0.747) !important;    
+
     border-bottom: solid 1px
 }
 .btnCompra h2 {
@@ -459,8 +467,9 @@ p {
 }
 /* CADASTRO */
 .containerCadastro {
-margin: 70px 0px 184px 0px;
-}
+    width: 35%;
+    text-align: center;
+  }
 .CadastroH1 {
   font-size: 30px;  
   color: #190C76;
@@ -474,8 +483,6 @@ margin: 70px 0px 184px 0px;
     margin-top: 15px;
 }
 .btnCadastro {
-    margin-top: 10px;
-    margin-left: 145px;
     border: none;
     border-radius: 15px;
 }
@@ -485,6 +492,13 @@ margin: 70px 0px 184px 0px;
     color: #d9d9d9 !important;
 }
 
+.cadastro{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  align-content: space-between;
+}
 
 
 /*RESPONSIVIDADE*/
@@ -492,49 +506,46 @@ margin: 70px 0px 184px 0px;
 
 @media (max-width:1000px){
     .azul {
-        max-width: 25vw;
+        max-width:5vh;
     }
     .cinza {
-        max-width: 20vw;
+        max-width: 5vh;
     }
 
     .header{
-        max-width: 500vw;
+        max-width: 100%;
         
     }
     .CadastroH1{
-        max-width: 500vw;
+        max-width: 50vh;
     }
     .containerCadastro{
-        max-width: 100vw;
+        width: 50vw;
     }
     .azulfooter{
         padding: 10px;
         display: flex;
         justify-content: space-between;
-        max-width: 100vw;
+        max-width: 100vh;
     }
     .cinzafooter{
-        max-width: 41vw;
-        margin: 0vw;
+        max-width: 41vh;
+        margin: 0vh;
         padding: 0;
     }
     .azulfooter p{
-        max-width: 100vw;
-        margin: 8vw;
+        max-width: 100vh;
+        margin: 01vh;
         padding: 0px;
     }
 
-   .img{
-    max-width: 100vw;
-   }
-
    .azul2{
-    padding-right: 100px;
+    padding-right: 1px;
    }
     .cinza2{
-        padding-right:100px ;
+        padding-right:1px ;
     }
+  
 }
 
 

@@ -51,7 +51,7 @@ const Header = () => {
                 <Dropdown.Menu>
                 <Dropdown.Item><Link to={'/login'}>Login</Link></Dropdown.Item>
                 <Dropdown.Item><Link to={'/cadastro'}>Cadastro</Link></Dropdown.Item>
-                <Dropdown.Item Link to={Login}>Menu Item</Dropdown.Item>
+                <Dropdown.Item><Link to={'#'}>Perfil</Link></Dropdown.Item>
                 </Dropdown.Menu> 
             </Dropdown>
             <div>

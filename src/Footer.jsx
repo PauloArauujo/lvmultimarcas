@@ -7,11 +7,11 @@ const Footer = () => {
         <div className="footer">
             <h2 className="cinzafooter"></h2>
             <h2 className="azulfooter">
-            <div>
+            <div className="elmentfooter">
                 <FontAwesomeIcon icon={faInstagram} className= "iconsFooter" /> 
                 <FontAwesomeIcon icon={faWhatsapp} className="iconsFooters" />
             </div>
-            <p>© 2024 LVmultimarcas </p>
+            <p className='pfooter' >© 2024 LVmultimarcas </p>
             </h2>
         </div>
     )

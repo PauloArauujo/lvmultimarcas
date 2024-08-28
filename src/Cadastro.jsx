@@ -27,10 +27,10 @@ const PersonalDataPage = () => {
    console.log('Dados pessoais enviados:', personalData);
  };
  return (
-    <>
+    <div className='cadastro'>
     <Header2/>
     <div className='containerCadastro'>
-<div style={{ maxWidth: '400px', margin: '0 auto' }}>
+<div >
 <h1 className='CadastroH1'>CADASTRO</h1>
 <form onSubmit={handleSubmit}>
 <div style={{ marginBottom: '10px' }}>
@@ -104,7 +104,7 @@ const PersonalDataPage = () => {
 </div>
 </div>
 <Footer/>
-</>
+</div>
  );
 };
 export default PersonalDataPage;
