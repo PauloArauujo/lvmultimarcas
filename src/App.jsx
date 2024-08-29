@@ -1,7 +1,6 @@
 import './App.css';
 import CatalagoProduto from './CatalogoProduto';
-import Header from './header';
-import Header2 from './Header2';
+import Header from './Header';
 import Footer from './Footer';
 import ExibeProduto from './ExibeProduto';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';

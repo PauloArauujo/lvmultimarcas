@@ -1,5 +1,5 @@
 import Footer from './Footer';
-import Header2 from './Header2';
+import Header from './Header';
 import Cadastro from './Cadastro';
 import { Link } from 'react-router-dom';
 import {useParams } from "react-router-dom";
@@ -23,8 +23,8 @@ const Login = () => {
 
 
 return <>
-    <Header2/>
-        <div className="container">
+    <Header links = {false}/>
+    <div className="container">
             <form onSubmit={handleSubmit}>
                 <h1>LOGIN</h1>
             <div className="email">

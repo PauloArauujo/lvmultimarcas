@@ -1,4 +1,4 @@
-import Header2 from './Header2';
+import Header from './Header';
 import Footer from './Footer';
 import Login from "./Login";
 import {useParams } from "react-router-dom";
@@ -28,7 +28,7 @@ const PersonalDataPage = () => {
  };
  return (
     <div className='cadastro'>
-    <Header2/>
+    <Header links = {false}/>
     <div className='containerCadastro'>
 <div >
 <h1 className='CadastroH1'>CADASTRO</h1>
