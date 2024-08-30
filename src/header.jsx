@@ -18,12 +18,12 @@ const Header = ({links = true}) => {
         <div className='header'>
             <img src={logo}/>
             <div className='anu'>
-            {/* {mostraPesquisa? <input className='barra' type="barraDePesquisa" placeholder="Pesquisa" /> : <></>} */}
+            {mostraPesquisa? <input className='barra' type="barraDePesquisa" placeholder="Pesquisa" /> : <></>}
                 <div className='azul'></div>
                 <div className='cinza'/>
             </div>
             <div className='iconLupa'>
-            <button className = "pesquisa" /*onClick={()=> setmostraPesquisa(!mostraPesquisa)}*/>
+            <button className = "pesquisa" onClick={()=> setmostraPesquisa(!mostraPesquisa)} >
                 <FontAwesomeIcon icon={faMagnifyingGlass} className='icon'/> 
             </button>
             </div>

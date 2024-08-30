@@ -98,7 +98,11 @@ a {
 .section-itens {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;    
+    flex-wrap: wrap; 
+    width: 60%;
+    margin-top: 3%;
+    margin-left: 20%;
+
 }
 .card-produto{
     display: flex;
@@ -115,13 +119,18 @@ a {
 .quadrado2 {
     background: rgba(217, 217, 217, 0.6);   
     border-radius: 15px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    width: 50%;
 }
-p {
-    text-align: center;
+.valor {
+    text-align: center !important;
     color: #190C76;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 30px;
+    margin: none;
+    margin-top: 7%;
+    font-size: 180%;
+
 }
 .pesquisa{
     display: flex;
@@ -129,7 +138,12 @@ p {
     background-color: #fff;
 }
 .barra{
-
+    width: 30%;
+    height: 2% !important;
+    align-items: center !important;
+    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 0.5%;
 }
 .buy {
     display: flex;
@@ -185,6 +199,20 @@ p {
 }
 .iconsFooters {
     color: #d9d9d9;
+}
+
+.carousel-home{
+    background-color: #d9d9d9;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    border-radius: 20px !important;
+}
+
+.CarroselTeste{
+    height: 25rem;
+    width: 100%;
+    border-radius: 20px !important;
 }
 
 /*EXIBE PRODUTOS (TELAS DE COMPRAS)*/
@@ -281,12 +309,6 @@ p {
     color: #190C76;
     font-size: 30px;
 }
-
-.anu {
-}
-.barra {
-}
-
 .p{
     background-color: rgba(217, 217,217, 0.6);
     border-radius: 40%;
@@ -430,6 +452,12 @@ p {
 
 
 @media (max-width:1200px){
+
+    .ExibeQuadrado{
+        
+    }
+
+    
     .anu {
         width: 20%;
     }
@@ -470,6 +498,7 @@ p {
         width: 20%;
         margin-bottom: 5px;
     }
+    
 }
 
 

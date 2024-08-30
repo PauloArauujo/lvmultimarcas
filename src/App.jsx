@@ -10,6 +10,7 @@ import Cadastro from './Cadastro';
 import Login from "./Login";
 import produtos from './Services';
 import Pagamento from './Pagamento';
+import Home from './home';
 
 function App() {
     const nomesProdutos = ['Camisa Preta', 'Camisa branca','Camisa azul','Camisa Preta',]
@@ -18,12 +19,7 @@ function App() {
     const rotas = createBrowserRouter([
         {
           path: '/',
-          element: <>
-            <Header/>
-            <CatalagoProduto 
-            nomes={nomesProdutos}/>
-            <Footer/>
-          </>
+          element: <Home produtos={nomesProdutos}/>
         },
         {
           path: '/seach',
